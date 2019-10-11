@@ -1,0 +1,16 @@
+{
+  "name": "proyecto1",
+  "version": "0.0.1",
+  "description": "Analizador lexico con lenguaje definido.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zofia",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1"
+  }
+}
