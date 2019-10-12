@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" charset="UTF-8">
+        <% include html/stylesheets.html%>
+        <title>Home</title>
+    </head>
+    <body background="images/background.jpg">
+        <% include html/header.html%>
+
+        <div class="card-group border-dark mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Seleccionar archivo</h5>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="customFile" onchange="readFile(this.files)">
+                        <label class="custom-file-label" >Choose file</label>                       
+                    </div>
+                    <p class="card-text"></p>                    
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">INPUT</label>
+                        <textarea class="form-control" id="text-area" rows="3"></textarea>
+                    </div>
+                    <button type="button" onclick="analyze()" class="btn btn-dark">Analizar</button>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-body">
+                        <table id="table-id" class="table">
+                                <thead class="thead-dark">
+                                  <tr>
+                                    <th scope="col">Lexema</th>
+                                    <th scope="col">Token</th>
+                                    <th scope="col">Linea</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  
+                                </tbody>
+                              </table>
+                </div>
+            </div>
+        </div>
+    <% include html/scripts.html%>
+    </body>
+</html>

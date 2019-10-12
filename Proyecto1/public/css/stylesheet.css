@@ -7,3 +7,9 @@
 #inside-card {
     width: 100%;
 }
+
+.card-group {
+    width: 85%;
+    margin-top: 50px;
+    margin-left: 100px;
+}

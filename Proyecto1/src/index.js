@@ -19,9 +19,9 @@ app.get('/home', (request, response) => {
     response.render('index.ejs');
 });
 
-//app.get('/home', (request, response) => {
-  //  response.sendFile(__dirname+'/views/index.ejs');
-//});
+app.get('/analyzer', (request, response) => {
+    response.render('analyzer.ejs');
+});
 
 //listening
 app.listen(app.get('port'), () => {
